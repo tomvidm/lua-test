@@ -5,6 +5,8 @@ extern "C"
 	#include "lauxlib.h"
 }
 
+#include <iostream>
+
 int main(int argc, char* argv[])
 {
     // create new Lua state
@@ -26,7 +28,7 @@ int main(int argc, char* argv[])
     }
 
     // run the Lua script
-    luaL_dofile(lua_state, "../../src/helloworld.lua");
+    std::cout << luaL_dofile(lua_state, "../../src/helloworld.lua");
 
     // close the Lua state
     lua_close(lua_state);

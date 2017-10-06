@@ -1,4 +1,6 @@
 cd bin
+echo "*** Removing bin/"
+rm -rf *
 echo "*** Running cmake .."
 cmake ..
 echo "*** Running make"

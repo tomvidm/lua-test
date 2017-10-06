@@ -2,7 +2,7 @@ spritesheet = {
 	file = "filename.png";
 	animations = {
 
-		animation_00 =  {
+		["animation_00"] = {
 			num_frames = 4;
 			frames = {
 			-- frame_duration, xpos, xsize, ypos, ysize
@@ -13,7 +13,7 @@ spritesheet = {
 			}
 		},
 
-		animation_01 = {
+		["animation_01"] = {
 			num_frames = 3;
 			frames = {
 			-- frame_duration, xpos, xsize, ypos, ysize
@@ -24,3 +24,5 @@ spritesheet = {
 		},
 	}	
 }
+
+print(spritesheet.animations["animation_00"].frames[1][1])
