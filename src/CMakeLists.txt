@@ -1,5 +1,6 @@
 set(SOURCES
 	main.cpp
+	LuaState.cpp
 	)
 
 add_executable(luatest ${SOURCES})
