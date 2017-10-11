@@ -15,8 +15,8 @@ extern "C"
 int main(int argc, char* argv[])
 {
     sel::State state;
-    state.Load("test.lua");
-    //std::cout << static_cast<int>(state["a"]);
+    state.Load("../../src/animation_encoding_test.lua");
+    std::cout << (int)(state["testSpritesheet"]["animations"]["animation_00"]["frames"][1][1]);
 
 
     return 0;

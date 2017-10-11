@@ -1,8 +1,8 @@
 testSpritesheet = {
 	file = "filename.png";
 	animations = {
-
 		["animation_00"] = {
+			a = 2;
 			num_frames = 4;
 			frames = {
 			-- frame_duration, xpos, xsize, ypos, ysize
