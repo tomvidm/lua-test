@@ -1,4 +1,4 @@
-spritesheet = {
+testSpritesheet = {
 	file = "filename.png";
 	animations = {
 
@@ -24,5 +24,3 @@ spritesheet = {
 		},
 	}	
 }
-
-print(spritesheet.animations["animation_00"].frames[1][1])

@@ -5,16 +5,19 @@ extern "C"
 	#include "lauxlib.h"
 }
 
-#include <iostream>
+#include "selene.h"
 
-#include "LuaState.h"
+#include <iostream>
+#include <string>
+#include <cassert>
+
 
 int main(int argc, char* argv[])
 {
-    // create new Lua state
-    lua::LuaState state;
-    state.doFile("animation_encoding_test.lua");
-    state.traverseTable();
+    sel::State state;
+    state.Load("test.lua");
+    //std::cout << static_cast<int>(state["a"]);
+
 
     return 0;
 }
